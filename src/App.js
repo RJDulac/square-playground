@@ -12,9 +12,9 @@ class App extends Component {
           <h1 className="App-title">Welcome to React</h1>
         </header>
         <div>
-          <Square showTitle={true} initialColor="red" />
-          <Square showTitle={true} initialColor="green" />
-          <Square showTitle={false} initialColor="blue" />
+          <Square showTitle={true} size={100} initialColor="red" />
+          <Square showTitle={true} size={50} initialColor="green" />
+          <Square showTitle={false} size={25} initialColor="blue" />
         </div>
       </div>
     );

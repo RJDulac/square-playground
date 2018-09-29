@@ -17,7 +17,6 @@ export default class Square extends React.Component {
     setCurrentColor (currentColor) {
         this.setState( {
             currentColor,
-            foo: true,
         });
     }
     render() {
@@ -29,9 +28,10 @@ export default class Square extends React.Component {
             <p>b</p>,
             <p>c</p>
         ]
+        const size = `${this.props.size}px`;
         const style = {
-            width: '100px',
-            height: '100px',
+            width: size,
+            height: size,
             //cannot mutate props, so you use state when you need to mutate
             backgroundColor: this.state.currentColor,
         };
@@ -53,6 +53,7 @@ export default class Square extends React.Component {
 }
 Square.propTypes = {
     initialColor: PropTypes.string.isRequired,
+    size: PropTypes.number.isRequired,
 };
 
 Square.defaultProps = {
