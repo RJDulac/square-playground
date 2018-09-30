@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Square from './Square';
+import SimpleSquare from './SimpleSquare';
 
 class App extends Component {
   render() {
@@ -12,6 +13,7 @@ class App extends Component {
           <h1 className="App-title">Welcome to React</h1>
         </header>
         <div>
+          <SimpleSquare color="red" size={200} />
           <Square showTitle={true} size={100} initialColor="red" />
           <Square showTitle={true} size={50} initialColor="green" />
           <Square showTitle={false} size={25} initialColor="blue" />
